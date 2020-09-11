@@ -1,47 +1,38 @@
 {
-	// "editor.formatOnSave": true, // 保存时自动格式化代码
-	"editor.lineHeight": 25, //设置文字行高
-	"editor.tabSize": 2, // tab长度
-	"editor.defaultFormatter": "octref.vetur", // 默认格式化程序
-
-	"prettier.semi": false, //行尾加分号
-	"prettier.tabWidth": 2, // tab长度
-	"prettier.useTabs": true, // 使用tab
-	"prettier.singleQuote": false, // 使用双引号
-	"prettier.trailingComma": "all", // 尾随逗号
-
-	"vetur.format.defaultFormatter.html": "prettyhtml",
-	"vetur.format.defaultFormatter.css": "prettier",
-	"vetur.format.defaultFormatter.postcss": "prettier",
-	"vetur.format.defaultFormatter.scss": "prettier",
-	"vetur.format.defaultFormatter.less": "prettier",
-	"vetur.format.defaultFormatter.stylus": "stylus-supremacy",
-	"vetur.format.defaultFormatter.ts": "prettier",
-	"vetur.format.defaultFormatter.sass": "sass-formatter",
-
-	// 指定 *.js 文件的格式化工具为vscode自带
-	"[javascript]": {
-		"editor.defaultFormatter": "vscode.typescript-language-features"
-	},
-	"[typescript]": {
-		"editor.defaultFormatter": "vscode.typescript-language-features"
-	},
-	"[markdown]": {
-		"editor.tabSize": 2,
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"[vue]": {
-		"editor.defaultFormatter": "octref.vetur"
-	},
-	"[jsonc]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-
-	"javascript.format.semicolons": "remove", // 删除不必要的分号。
-	"typescript.format.semicolons": "remove", // 删除不必要的分号。
-	"typescript.format.insertSpaceBeforeFunctionParenthesis": true,
-
-	// *** MUST
-	// *** 让vetur使用vs自带的js格式化工具，以便在函数前面加个空格 只针对vue文件
-	"vetur.format.defaultFormatter.js": "vscode-typescript"
+    // "editor.formatOnSave": true,
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "octref.vetur",
+    "prettier.semi": false,
+    "prettier.tabWidth": 2,
+    "prettier.useTabs": true,
+    "prettier.trailingComma": "all",
+    "vetur.format.defaultFormatter.html": "prettyhtml",
+    "vetur.format.defaultFormatter.css": "prettier",
+    "vetur.format.defaultFormatter.postcss": "prettier",
+    "vetur.format.defaultFormatter.scss": "prettier",
+    "vetur.format.defaultFormatter.less": "prettier",
+    "vetur.format.defaultFormatter.stylus": "stylus-supremacy",
+    "vetur.format.defaultFormatter.ts": "prettier",
+    "vetur.format.defaultFormatter.sass": "sass-formatter",
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[markdown]": {
+        "editor.tabSize": 2,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[vue]": {
+        "editor.defaultFormatter": "octref.vetur"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "javascript.format.semicolons": "remove",
+    "typescript.format.semicolons": "remove",
+    "typescript.format.insertSpaceBeforeFunctionParenthesis": true,
+    "vetur.format.defaultFormatter.js": "vscode-typescript",
+    "prettier.singleQuote": true
 }
