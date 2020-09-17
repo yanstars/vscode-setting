@@ -66,16 +66,5 @@
 	},
 	"[json]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"leetcode.endpoint": "leetcode-cn",
-	"sonarlint.connectedMode.connections.sonarqube": [
-		{
-			"serverUrl": "http://sonar.shebao.net",
-			"token": "fe0dfa9c9d39bf4d22a1ec333fba6f3c54c1d20b"
-		}
-	],
-	"sonarlint.connectedMode.project": {
-		"projectKey": "frontend-vue-wo.shebao.net"
-	},
-	"sonarlint.ls.javaHome": "/Users/mengqingtao/.vscode/extensions/sonarsource.sonarlint_managed-jre/jre/jdk-11.0.8+10-jre/Contents/Home"
+	}
 }
