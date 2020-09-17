@@ -1,0 +1,200 @@
+{
+  "markdownlint.config": {
+    "hard_tab": true,
+    "MD013": false,
+    "MD010": false
+  },
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.includeLanguages": {
+    "wxml": "html",
+    "javascript": "javascriptreact"
+  },
+  "editor.suggestSelection": "recentlyUsedByPrefix",
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "workbench.activityBar.visible": true,
+  "workbench.statusBar.visible": true,
+  "workbench.colorTheme": "One Dark Pro", // 打开文件不覆盖
+  "workbench.sideBar.location": "left",
+  "workbench.tree.renderIndentGuides": "always",
+
+  "editor.autoClosingBrackets": "always",
+  "editor.autoClosingQuotes": "always",
+  "editor.tabCompletion": "on",
+  "editor.lineHeight": 25, //设置文字行高
+  "editor.lineNumbers": "on", //开启行数提示
+  "editor.quickSuggestions": {
+    //开启自动显示建议
+    "other": true,
+    "comments": true,
+    "strings": true
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.roundedSelection": false,
+  "editor.accessibilitySupport": "off",
+  "editor.fontLigatures": true,
+  // "editor.tabSize": 4,
+  "editor.detectIndentation": false,
+  "editor.renderWhitespace": "none",
+  "editor.renderControlCharacters": true,
+  "editor.overviewRulerBorder": false,
+  "editor.renderIndentGuides": false,
+
+  ////////////////////////////////////////////////////////////////////////////
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "octref.vetur"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  ////////////////////////////////////////////////////////////////////////////
+  "files.associations": {
+    "*.txt": "plaintext",
+    "*.ejs": "html",
+    "*.js": "javascript",
+    "*.cjson": "jsonc",
+    "*.wxss": "css",
+    "*.wxs": "javascript"
+  },
+  "debug.node.autoAttach": "off",
+  "search.followSymlinks": false, // 关闭快速预览
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/dist": true
+  },
+  "vsicons.dontShowNewVersionMessage": true,
+  "gulp.autoDetect": "off",
+  "terminal.explorerKind": "external",
+  "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+  // "terminal.integrated.shell.windows": "F:\\software\\cmder\\Cmder.exe",
+  "sync.forceUpload": false,
+  // 开启 vscode 文件路径导航
+  "breadcrumbs.enabled": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  //  #让函数(名)和后面的括号之间加个空格
+  "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+  ////////////////////////////////////////////////////////////////////////////
+
+  "prettier.printWidth": 200,
+  // "prettier.tabWidth": 4,
+  "prettier.disableLanguages": [],
+  // "prettier.semi": true,
+  //  #使用带引号替代双引号
+  // "prettier.singleQuote": true,
+
+  ////////////////////////////////////////////////////////////////////////////
+  "liveServer.settings.donotShowInfoMsg": true, //打开自动保存
+  "window.zoomLevel": 0,
+  "vetur.format.options.useTabs": false, // 去掉代码结尾的分号
+  "vetur.format.options.tabSize": 2,
+  "vetur.format.defaultFormatterOptions": {
+    "js-beautify-html": {
+      //  "wrap_attributes": "force-expand-multiline"
+      "wrap_attributes": "auto"
+    },
+    "prettyhtml": {
+      // 单行超过160个长度的时候开始换行显示各种参数和事件
+      "printWidth": 200
+    }
+  },
+
+  "merge-conflict.autoNavigateNextConflict.enabled": true,
+  "screencastMode.onlyKeyboardShortcuts": true,
+  "diffEditor.ignoreTrimWhitespace": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "git.suggestSmartCommit": false,
+  "cSpell.language": "en,en-GB,en-US",
+  "cSpell.userWords": ["Btns", "Colums", "Waiqin", "apiname", "canclick", "checkin", "checkins", "citem", "datalist"],
+  "code-runner.runInTerminal": true,
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "code-runner.executorMap": {
+    "python": "py"
+  },
+  "code-runner.clearPreviousOutput": true,
+  "code-runner.showRunCommandInExplorerContextMenu": false,
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.editor.tabSizing": "shrink",
+  "files.autoSave": "afterDelay",
+  "todo-tree.tree.showScanModeButton": false,
+  // "[xml]": {
+  //     "editor.defaultFormatter": "redhat.vscode-xml"
+  // },
+  "terminal.integrated.copyOnSelection": true,
+  "terminal.integrated.cursorStyle": "line",
+  "remote.SSH.showLoginTerminal": true,
+
+  "remote.extensionKind": {
+    "ms-azuretools.vscode-docker": "workspace"
+  },
+  "vetur.validation.template": false,
+  "liveServer.settings.donotVerifyTags": true,
+  "markdown.preview.openMarkdownLinks": "inEditor",
+  "markdown.preview.markEditorSelection": false,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    // 快速补全
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": true,
+      "strings": true
+    },
+    // 显示空格
+    "editor.renderWhitespace": "all",
+    // snippet 提示优先（看个人喜欢）
+    "editor.snippetSuggestions": "top",
+    "editor.tabCompletion": "on"
+    // 使用enter 接受提示
+    // "editor.acceptSuggestionOnEnter": "on",˝
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "todo-tree.highlights.defaultHighlight": {
+    "icon": "alert",
+    "type": "text",
+    "foreground": "red",
+    "background": "white",
+    "opacity": 50,
+    "iconColour": "blue"
+  },
+  "todo-tree.highlights.customHighlight": {
+    "TODO": {
+      "icon": "check",
+      "type": "line"
+    },
+    "FIXME": {
+      "foreground": "black",
+      "iconColour": "yellow",
+      "gutterIcon": true
+    }
+  },
+  "diffEditor.renderSideBySide": true,
+  "git.autofetch": true,
+  "sync.forceDownload": false,
+  "sync.gist": "da6088fad8422476452de1a3c92b7215"
+}
