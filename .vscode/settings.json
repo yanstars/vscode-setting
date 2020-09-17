@@ -1,7 +1,5 @@
 {
 	//编辑器的配置
-	// "files.autoSave": "onFocusChange", // 失去焦点时保存
-	"editor.formatOnSave": false, // 保存时格式化
 	"editor.tabSize": 2, // 编辑器tab尺寸
 	"editor.defaultFormatter": "octref.vetur",
 	"diffEditor.ignoreTrimWhitespace": true, // 控制差异编辑器是否将对前导空格或尾随空格的更改显示为差异
@@ -10,15 +8,18 @@
 	"typescript.format.semicolons": "remove", //移除ts语句分号
 	"typescript.format.insertSpaceBeforeFunctionParenthesis": true, //函数括号加空格
 	"javascript.format.insertSpaceBeforeFunctionParenthesis": true, //函数括号加空格
+	"files.autoSave": "onFocusChange", // 失去焦点时保存
+	"editor.formatOnSave": false, // 保存时格式化
 	//prettier的配置
 	"prettier.semi": false, //不使用分号结尾
 	"prettier.tabWidth": 2, //tab宽度2
 	"prettier.useTabs": true, // 缩进使用tab，不使用空格
 	"prettier.trailingComma": "all", //是否添加尾随逗号
-	"prettier.printWidth": 160, //最大换行值 ˝
+	"prettier.printWidth": 160, //最大换行值
 	"prettier.singleQuote": true, //使用单引号
 	//vetur的配置
 	"vetur.validation.template": false, //不走校验规则
+	// "vetur.format.options.useTabs": true,//使用tab缩进
 	"vetur.format.scriptInitialIndent": true, //script下一行缩进
 	"vetur.format.styleInitialIndent": true, //style下一行缩进
 	"vetur.format.defaultFormatter.html": "js-beautify-html",
