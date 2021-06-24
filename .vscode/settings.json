@@ -27,7 +27,7 @@
   "typescript.format.insertSpaceBeforeFunctionParenthesis": true, //函数括号加空格
   "typescript.updateImportsOnFileMove.enabled": "always",
 
-  "vetur.validation.template": true, //不走校验规则
+  "vetur.validation.template": true,
   "vetur.validation.script": true,
   "vetur.format.defaultFormatter.html": "js-beautify-html",
   "vetur.format.scriptInitialIndent": true,
