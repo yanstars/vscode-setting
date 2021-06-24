@@ -1,70 +1,134 @@
 {
-	//编辑器的配置
-	"editor.tabSize": 2, // 编辑器tab尺寸
-	"editor.defaultFormatter": "octref.vetur",
-	"diffEditor.ignoreTrimWhitespace": true, // 控制差异编辑器是否将对前导空格或尾随空格的更改显示为差异
-	"editor.trimAutoWhitespace": true, // 删除尾随自动插入的空格
-	"javascript.format.semicolons": "remove", //移除js语句分号
-	"typescript.format.semicolons": "remove", //移除ts语句分号
-	"typescript.format.insertSpaceBeforeFunctionParenthesis": true, //函数括号加空格
-	"javascript.format.insertSpaceBeforeFunctionParenthesis": true, //函数括号加空格
-	"files.autoSave": "onFocusChange", // 失去焦点时保存
-	"editor.formatOnSave": false, // 保存时格式化
-	//prettier的配置
-	"prettier.semi": false, //不使用分号结尾
-	"prettier.tabWidth": 2, //tab宽度2
-	"prettier.useTabs": true, // 缩进使用tab，不使用空格
-	"prettier.trailingComma": "all", //是否添加尾随逗号
-	"prettier.printWidth": 160, //最大换行值
-	"prettier.singleQuote": true, //使用单引号
-	//vetur的配置
-	"vetur.validation.template": false, //不走校验规则
-	// "vetur.format.options.useTabs": true,//使用tab缩进
-	"vetur.format.scriptInitialIndent": true, //script下一行缩进
-	"vetur.format.styleInitialIndent": true, //style下一行缩进
-	"vetur.format.defaultFormatter.html": "js-beautify-html",
-	"vetur.format.defaultFormatter.css": "prettier",
-	"vetur.format.defaultFormatter.js": "vscode-typescript",
-	"vetur.format.defaultFormatter.postcss": "prettier",
-	"vetur.format.defaultFormatter.scss": "prettier",
-	"vetur.format.defaultFormatter.less": "prettier",
-	"vetur.format.defaultFormatter.stylus": "stylus-supremacy",
-	"vetur.format.defaultFormatter.ts": "prettier",
-	"vetur.format.defaultFormatter.sass": "sass-formatter",
-	"vetur.format.defaultFormatterOptions": {
-		"js-beautify-html": {
-			"wrap_line_length": 0,
-			"wrap_attributes": "force-aligned",
-			"end_with_newline": false
-		}
-	},
-	//文件格式化工具配置
-	"[javascript]": {
-		"editor.defaultFormatter": "vscode.typescript-language-features"
-	},
-	"[typescript]": {
-		"editor.defaultFormatter": "vscode.typescript-language-features"
-	},
-	"[markdown]": {
-		"editor.tabSize": 2,
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"[vue]": {
-		"editor.defaultFormatter": "octref.vetur"
-	},
-	"[jsonc]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"[scss]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"[css]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"[html]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"[json]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	}
+  "editor.tabSize": 2,
+  "editor.defaultFormatter": "octref.vetur",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.trimAutoWhitespace": true,
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.cursorBlinking": "solid",
+  "editor.cursorStyle": "block",
+  "editor.fontSize": 12.5,
+  "editor.lineHeight": 25,
+  "editor.tabCompletion": "on",
+  "editor.unfoldOnClickAfterEndOfLine": true,
+  "workbench.productIconTheme": "icons-carbon",
+  "workbench.colorTheme": "GitHub Dark",
+  "workbench.sideBar.location": "right",
+  "javascript.format.insertSpaceAfterConstructor": true,
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": true,
+  "javascript.preferences.quoteStyle": "double",
+  "javascript.suggest.completeFunctionCalls": true,
+  "js/ts.implicitProjectConfig.checkJs": true,
+  "js/ts.implicitProjectConfig.experimentalDecorators": true,
+  "js/ts.implicitProjectConfig.strictNullChecks": true,
+  "javascript.format.semicolons": "remove", //移除js语句分号
+  "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+  "typescript.format.semicolons": "remove", //移除ts语句分号
+  "typescript.format.insertSpaceBeforeFunctionParenthesis": true, //函数括号加空格
+  "typescript.updateImportsOnFileMove.enabled": "always",
+
+  "vetur.validation.template": true, //不走校验规则
+  "vetur.validation.script": true,
+  "vetur.format.defaultFormatter.html": "js-beautify-html",
+  "vetur.format.scriptInitialIndent": true,
+  "vetur.format.styleInitialIndent": true,
+  "vetur.format.defaultFormatter.css": "prettier",
+  "vetur.format.defaultFormatter.js": "vscode-typescript",
+  "vetur.format.defaultFormatter.postcss": "prettier",
+  "vetur.format.defaultFormatter.scss": "prettier",
+  "vetur.format.defaultFormatter.less": "prettier",
+  "vetur.format.defaultFormatter.stylus": "stylus-supremacy",
+  "vetur.format.defaultFormatter.ts": "vscode-typescript",
+  "vetur.format.defaultFormatter.sass": "sass-formatter",
+  "vetur.useWorkspaceDependencies": true,
+  "vetur.validation.templateProps": true,
+  "vetur.format.defaultFormatterOptions": {
+    // "prettier": {
+    // }
+
+    // "prettyhtml": {
+    // 	"sortAttributes": true,
+    // 	"printWidth": 100
+    // options.tabWidth (default: 2)
+    // options.useTabs (default: false)
+    // options.printWidth (default: 80)
+    // options.usePrettier (default: true)
+    // options.prettier (default: local config)
+    // options.singleQuote  (default: false)
+    // options.wrapAttributes  (when it has multiple, default: false)
+    // options.sortAttributes (default: false)
+    // Sort attributes alphabetically
+    // "wrapAttributes": true
+    // }
+
+    "js-beautify-html": {
+      // "end_with_newline": false, // End output with newline
+      // "indent_char": ' ', // Indentation character
+      // "indent_handlebars": false, // e.g. {{#foo}}, {{/foo}}
+      // "indent_inner_html": false, // Indent <head> and <body> sections
+      // "indent_scripts": 'keep', // [keep|separate|normal]
+      // "indent_size": 2, // Indentation size
+      // "indent_with_tabs": false,
+      // "max_preserve_newlines": 1, // Maximum number of line breaks to be preserved in one chunk (0 disables)
+      // "preserve_newlines": true, // Whether existing line breaks before elements should be preserved
+      // "unformatted": [], // Tags that shouldn't be formatted. Causes mis-alignment
+      // "wrap_line_length": 0, // Lines should wrap at next opportunity after this number of characters (0 disables)
+      // "wrap_attributes": 'force-expand-multiline' as any
+      // Wrap attributes to new lines [auto|force|force-aligned|force-expand-multiline] ["auto"]
+      "wrap_line_length": 0,
+      "wrap_attributes": "force-aligned",
+      "end_with_newline": false
+    }
+  },
+
+  //------------------------------------------------------- personal
+
+  "merge-conflict.autoNavigateNextConflict.enabled": true,
+
+  "eslint.probe": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "html",
+    "vue",
+    "markdown"
+  ],
+  "workbench.startupEditor": "none",
+  "eslint.format.enable": true,
+  "explorer.confirmDelete": false,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "todo-tree.general.tags": [
+    "BUG",
+    "HACK",
+    "FIXME",
+    "TODO",
+    "XXX",
+    "[ ]",
+    "[x]"
+  ],
+  "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
+  "explorer.confirmDragAndDrop": false,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[sass]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": false
+  }
 }
